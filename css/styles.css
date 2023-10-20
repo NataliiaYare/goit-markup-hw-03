@@ -354,12 +354,6 @@ a:link {
   flex-direction: column;
 }
 
-.page-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 .footer-paragraph {
   color: var(--CLOUD, #f4f4fd);
   font-size: 16px;
