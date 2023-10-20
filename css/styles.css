@@ -44,7 +44,6 @@ img {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 0 15px 0 15px;
 }
 
 a:link {
@@ -63,7 +62,7 @@ a:link {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.top-header-box {
+.top-header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
