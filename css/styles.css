@@ -54,12 +54,13 @@ a:link {
   width: 1158px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
 }
 
 /* ================== Header ===================== */
-
+.top-header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .top-header-box {
   display: flex;
   align-items: center;
@@ -70,6 +71,7 @@ a:link {
 
 .navigation-list {
   display: flex;
+  align-items: center;
 }
 
 .navigation {
@@ -79,8 +81,11 @@ a:link {
 
 .contact-us-list {
   display: flex;
+  gap: 40px;
 }
-
+.contact-us-item:last-child {
+  margin-right: 0;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -101,6 +106,7 @@ a:link {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.32px;
+  padding: 24px 0;
 }
 
 .navigation-item:hover {
@@ -137,14 +143,14 @@ h1 {
 
 .hero {
   background-color: #2e2f42;
+  height: 600px;
+  padding: 188px 0;
 }
 
 .hero-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 600px;
-  padding-top: 188px;
   padding-left: auto;
   padding-right: auto;
 }
@@ -157,7 +163,7 @@ h1 {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  width: 496px;
+  max-width: 496px;
   margin-bottom: 48px;
 }
 
@@ -170,11 +176,12 @@ h1 {
   font-weight: 500;
   letter-spacing: 0.04em;
   line-height: 1.5;
-  margin: 0 auto;
   align-items: center;
   height: 56px;
-  width: 169px;
+  min-width: 169px;
   border-radius: 4px;
+  border: none;
+  margin-bottom: 188px;
 }
 
 .hero-button:hover {
@@ -194,7 +201,6 @@ h1 {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -205,10 +211,9 @@ h1 {
   gap: 24px;
 }
 
-.our-strangths-section-box {
+.our-strangths-section {
   height: 344px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 .our-strangths-item {
@@ -237,10 +242,6 @@ h1 {
 
 /* =========================== Our team ======================================= */
 
-.our-team-section-box {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
 .our-team-title {
   color: #2e2f42;
   text-align: center;
@@ -254,6 +255,7 @@ h1 {
 
 .our-team-section {
   background-color: var(--CLOUD, #f4f4fd);
+  padding: 120px 0;
 }
 
 .our-team-list {
@@ -267,6 +269,7 @@ h1 {
   padding-bottom: 32px;
   align-items: center;
 }
+
 .photo-card {
   background: var(--WHITE, #ffffff);
   border-radius: 0px 0px 4px 4px;
@@ -323,26 +326,28 @@ h1 {
 
 .project-name {
   color: #2e2f42;
-  text-align: center;
+  text-align: left;
   font-size: 20px;
   font-weight: 500;
   line-height: 120%;
   letter-spacing: 0.4px;
-  margin-top: 32px;
   margin-bottom: 8px;
-  margin-left: 16px;
-  margin-right: 16px;
+}
+
+.portfolio-naming {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  width: 100%;
 }
 
 .portfolio-paragraph {
   color: var(--SLATE, #434455);
-  margin-bottom: 32px;
-  margin-left: 16px;
-  margin-right: 16px;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.32px;
 }
+
 .portfolio-section {
   background-color: #ffffff;
   padding-top: 120px;
@@ -352,8 +357,7 @@ h1 {
 .footer-style {
   background: var(--NAVY-BLUE, #2e2f42);
   height: 312px;
-  padding-top: 101.5px;
-  padding-bottom: 100px;
+  padding: 100px 0;
   display: flex;
   flex-direction: column;
 }
@@ -364,7 +368,6 @@ h1 {
   font-weight: 400;
   letter-spacing: 0.32px;
   width: 264px;
-  margin-top: 17.5px;
 }
 
 .logo-footer {
@@ -375,6 +378,8 @@ h1 {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .logo-studio {
