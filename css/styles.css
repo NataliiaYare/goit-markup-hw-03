@@ -61,6 +61,7 @@ a:link {
 .top-header {
   border-bottom: 1px solid #e7e9fc;
 }
+
 .top-header-box {
   display: flex;
   align-items: center;
@@ -137,9 +138,6 @@ a:link {
 }
 
 /* ========================== Hero ======================== */
-
-h1 {
-}
 
 .hero {
   background-color: #2e2f42;
